@@ -6,11 +6,13 @@
     "bin": {
         "serveqr": "./dist/serveqr.js"
     },
-    "files": ["dist", "src"],
+    "files": [
+        "dist",
+        "src"
+    ],
     "scripts": {
         "start": "npm run live",
-        "live":
-            "nodemon --exec ./node_modules/.bin/ts-node -- ./src/serveqr.ts",
+        "live": "nodemon --exec ./node_modules/.bin/ts-node -- ./src/serveqr.ts",
         "once": "ts-node ./src/serveqr.ts $*",
         "compile": "tsc -p tsconfig.json",
         "prepare": "npm run compile"
