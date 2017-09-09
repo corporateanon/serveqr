@@ -1,0 +1,33 @@
+{
+    "name": "serveqr",
+    "version": "0.0.1",
+    "description": "Serve directory and share with QR-code for mobile devices",
+    "main": "serveqr.js",
+    "bin": {
+        "serveqr": "./dist/serveqr.js"
+    },
+    "files": ["dist", "src"],
+    "scripts": {
+        "start": "npm run live",
+        "live":
+            "nodemon --exec ./node_modules/.bin/ts-node -- ./src/serveqr.ts",
+        "once": "ts-node ./src/serveqr.ts $*",
+        "compile": "tsc -p tsconfig.json",
+        "prepare": "npm run compile"
+    },
+    "author": "Corporate Anon",
+    "license": "ISC",
+    "dependencies": {
+        "get-port": "^3.2.0",
+        "ip": "^1.1.5",
+        "qrcode-terminal": "^0.11.0",
+        "serve": "^6.0.6"
+    },
+    "devDependencies": {
+        "@types/get-port": "0.0.4",
+        "@types/ip": "0.0.30",
+        "@types/node": "^8.0.28",
+        "ts-node": "^3.3.0",
+        "typescript": "^2.5.2"
+    }
+}
