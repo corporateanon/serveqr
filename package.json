@@ -4,7 +4,7 @@
     "description": "Serve directory and share with QR-code for mobile devices",
     "main": "serveqr.js",
     "bin": {
-        "serveqr": "./dist/serveqr.js"
+        "serveqr": "dist/serveqr.js"
     },
     "files": [
         "dist",

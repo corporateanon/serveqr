@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import serve = require('serve');
 import ip = require('ip');
 import getPort = require('get-port');
