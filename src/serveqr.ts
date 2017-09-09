@@ -14,6 +14,8 @@ export const startContentServer = async (dir: string): Promise<void> => {
 
 const main = async () => {
     await startContentServer('.');
-}
+};
 
-main();
+if (!module.parent) {
+    main();
+}
