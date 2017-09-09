@@ -1,6 +1,6 @@
 {
     "name": "serveqr",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Serve directory and share with QR-code for mobile devices",
     "main": "serveqr.js",
     "bin": {
